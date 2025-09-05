@@ -88,7 +88,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('/panels-screan-t-l.png');
+  background-image: url('/panels-screen-t-l.png');
   background-size: cover;
   background-position: bottom;
   filter: blur(1px);
