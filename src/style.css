@@ -76,10 +76,6 @@ body {
 }
 
 .main .one-screen.first {
-  /* background-image: url('/panels-screan-t-l.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom; */
   position: relative;
   overflow: hidden;
 }
