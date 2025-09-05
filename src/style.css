@@ -9,6 +9,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 *,
@@ -41,22 +42,67 @@ body {
   background-color: #1e40af;
   background: #1E40AF;
   background: linear-gradient(180deg, rgba(30, 64, 175, 1) 0%, rgba(30, 64, 175, 1) 95%, rgba(30, 64, 175, 0) 100%);
-  position: sticky;
+  position: fixed;
+  top: 0;
   padding: 12px 24px;
   color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.head .head-logo {
+  font-size: 32px;
+  font-weight: 700;
 }
 
 /* .head .head-nav-mobile .head-nav-mobile-icon {} */
 
 .sticky {
-  position: sticky;
-  top: 0;
+  transform: translate(0, -100%);
   z-index: 10;
 }
 
 .main {
   min-height: 100vh;
   width: 100%;
+}
+
+.main .one-screen {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .one-screen.first {
+  /* background-image: url('/panels-screan-t-l.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; */
+  position: relative;
+  overflow: hidden;
+}
+
+.main .one-screen.first::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/panels-screan-t-l.png');
+  background-size: cover;
+  background-position: bottom;
+  filter: blur(1px);
+  /* блюр */
+  opacity: 0.6;
+  /* прозорість */
+  z-index: -1;
+  /* щоб був позаду контенту */
+}
+
+.main .one-screen.third {
+  background-image: url('/panel-screen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer {

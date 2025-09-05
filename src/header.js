@@ -1,11 +1,11 @@
 const header = document.querySelector('.head');
-const main = document.querySelector('.main');
+// const main = document.querySelector('.main');
 window.onwheel = e => {
   if(e.deltaY >= 0){
     // Wheel Down
-    header.classList.remove('sticky');
+    header.classList.add('sticky');
   } else {
     // Wheel Up
-    header.classList.add('sticky');
+    header.classList.remove('sticky');
   }
 }
