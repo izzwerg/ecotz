@@ -92,7 +92,7 @@ body {
   z-index: -1;
 }
 
-.main .one-screen.third {
+.main .one-screen.form-container {
   background-image: url('/panel-screen.jpg');
   background-repeat: no-repeat;
   background-size: cover;
