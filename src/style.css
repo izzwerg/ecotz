@@ -100,6 +100,11 @@ body {
   padding: 10%;
 }
 
+.main .one-screen.third {
+  position: relative;
+  overflow: hidden;
+}
+
 .main .one-screen.first .h1-text {
   color: #1E40AF;
   font-size: 36px;
@@ -131,6 +136,18 @@ body {
   position: absolute;
   inset: 0;
   background-image: url('/panels-screen-t-l.png');
+  background-size: cover;
+  background-position: bottom;
+  filter: blur(1px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.main .one-screen.third::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/third-l.png');
   background-size: cover;
   background-position: bottom;
   filter: blur(1px);
