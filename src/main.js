@@ -12,5 +12,5 @@ window.addEventListener("wheel", (e) => {
     behavior: "smooth"
   });
 
-  setTimeout(() => isScrolling = false, 300); // затримка для завершення анімації
+  setTimeout(() => isScrolling = false, 800); // затримка для завершення анімації
 });
