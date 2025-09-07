@@ -1,6 +1,8 @@
 let isScrolling = false;
 
 window.addEventListener("wheel", (e) => {
+    let isMenuOpen = document.querySelector('.head-mob-menu').classList.contains('open');
+    if (isMenuOpen) return; // no scrolling when menu is open
   if (isScrolling) return; 
   isScrolling = true;
 
@@ -12,5 +14,5 @@ window.addEventListener("wheel", (e) => {
     behavior: "smooth"
   });
 
-  setTimeout(() => isScrolling = false, 800); // затримка для завершення анімації
+  setTimeout(() => isScrolling = false, 800); // delay to prevent rapid scrolling
 });
