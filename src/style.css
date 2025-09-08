@@ -58,6 +58,11 @@ body {
   /* z-index: 11; */
 }
 
+.head .head-logo a {
+  color: white;
+  text-decoration: none;
+}
+
 .head .head-nav-mobile {
   /* z-index: 11; */
 }
