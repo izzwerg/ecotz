@@ -133,7 +133,6 @@ body {
 }
 
 .main .one-screen.second {
-  background-color: #06b6d4;
   color: #1E40AF;
   display: flex;
   flex-direction: column;
@@ -141,6 +140,19 @@ body {
   align-items: center;
   text-align: center;
   padding: 0 12px;
+  position: relative;
+}
+
+.main .one-screen.second::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/schema-l.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  opacity: 0.6;
+  z-index: -1;
 }
 
 .main .one-screen.third {
