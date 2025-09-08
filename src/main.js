@@ -16,3 +16,12 @@ window.addEventListener("wheel", (e) => {
 
   setTimeout(() => isScrolling = false, 800); // delay to prevent rapid scrolling
 });
+
+const whyBtn = document.querySelector('.modal-btn')
+console.log(
+  whyBtn
+);
+
+whyBtn.onclick = () => {
+  document.querySelector('.why').classList.add('open');
+}

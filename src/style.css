@@ -110,6 +110,23 @@ body {
   text-decoration: none;
 }
 
+.head .why {
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 10vh 5vw;
+  z-index: 11;
+}
+
+.head .why.open {
+  top: 0;
+  background-color: #06b6d4;
+  transition: top 0.3s ease-in-out;
+  z-index: 11;
+}
+
 .main {
   min-height: 100vh;
   width: 100%;
