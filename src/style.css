@@ -43,7 +43,6 @@ body {
   width: 100%;
   background-color: #1e40af;
   background: #1E40AF;
-  /* background: linear-gradient(180deg, rgba(30, 64, 175, 1) 0%, rgba(30, 64, 175, 1) 95%, rgba(30, 64, 175, 0) 100%); */
   position: fixed;
   top: 0;
   padding: 12px 24px;
@@ -61,10 +60,12 @@ body {
 .head .head-logo a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .head .head-nav-mobile {
-  /* z-index: 11; */
+  cursor: pointer;
+  z-index: 11;
 }
 
 .sticky {
@@ -237,10 +238,10 @@ body {
   text-align: center;
   font-weight: 600;
   text-shadow:
-    -1px -1px 0 #1e40af36,
-    1px -1px 0 #1e40af36,
-    -1px 1px 0 #1e40af36,
-    1px 1px 0 #1e40af36
+    -1px -1px 0 #1e40af49,
+    1px -1px 0 #1e40af49,
+    -1px 1px 0 #1e40af49,
+    1px 1px 0 #1e40af49
 }
 
 .main .one-screen.form-container .form .form-input {
