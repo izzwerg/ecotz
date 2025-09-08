@@ -21,7 +21,16 @@
     <div class="head-nav-mobile">
       <img src="./menu-thin.svg" alt="menu" class="head-nav-mobile-icon">
     </div>
-    <div class="head-mob-menu"></div>
+    <div class="head-mob-menu">
+      <nav>
+        <ul>
+          <li><a href="#start" class="menu-link">Головна</a></li>
+          <li><a href="#about" class="menu-link">Про ТЗ</a></li>
+          <li><a href="#portfolio" class="menu-link">Портфоліо</a></li>
+          <li><a href="#contact" class="menu-link">Зв'язатися</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <section class="one-screen first" id="start">
@@ -35,13 +44,14 @@
     <section class="one-screen third" id="portfolio"></section>
     <footer class="one-screen form-container" id="contact">
       <form action="" class="form">
-        <h2 class="form-title">Залиште заявку на розрахунок технічного завдання</h2>
+        <h2 class="form-title">Зробіть заявку на розрахунок технічного завдання</h2>
         <input type="text" class="form-input" placeholder="Ім'я" />
         <input type="tel" class="form-input" placeholder="Телефон" />
         <input type="email" class="form-input" placeholder="E-mail" />
-        <textarea name="" id="" placeholder="Додаткова інформація"></textarea>
+        <textarea name="" id="" class="form-input" rows="5" placeholder="Додаткова інформація"></textarea>
         <button type="button" class="form-button">Залишити заявку</button>
       </form>
+      <div class="dev">© 2025 by <a href="mailto:olexa.horobij@gmail.com">Izzy</a></div>
     </footer>
   </main>
   <script type="module" src="./src/main.js"></script>

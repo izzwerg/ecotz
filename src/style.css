@@ -73,6 +73,10 @@ body {
   top: 100%;
   left: 100%;
   z-index: 11;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .head .head-mob-menu.open {
@@ -80,6 +84,24 @@ body {
   background-color: #06b6d4;
   transition: left 0.3s ease-in-out;
   z-index: 11;
+}
+
+.head .head-mob-menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* text-align: center; */
+  transform: translateY(-4vh);
+}
+
+.head .head-mob-menu nav ul li a {
+  color: #1E40AF;
+  font-size: 48px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .main {
@@ -193,6 +215,65 @@ body {
   background-image: url('/panel-screen.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 10vw;
+  position: relative;
+}
+
+.main .one-screen.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  transform: translateY(4vh);
+}
+
+.main .one-screen.form-container .form h2 {
+  color: #06b6d4;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  text-shadow:
+    -1px -1px 0 #1e40af36,
+    1px -1px 0 #1e40af36,
+    -1px 1px 0 #1e40af36,
+    1px 1px 0 #1e40af36
+}
+
+.main .one-screen.form-container .form .form-input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #1E40AF;
+  font-size: 16px;
+  background-color: #f8fafc;
+  color: #1E40AF;
+}
+
+.main .one-screen.form-container .form .form-button {
+  background-color: #1E40AF;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.main .one-screen.form-container .form .form-button:hover {
+  background-color: #374151;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.main .one-screen.form-container .dev {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 12px;
+  color: #f8fafc;
+  text-shadow:
+    -1px -1px 0 #1e40af77,
+    1px -1px 0 #1e40af77,
+    -1px 1px 0 #1e40af77,
+    1px 1px 0 #1e40af77;
 }
 
 .footer {
