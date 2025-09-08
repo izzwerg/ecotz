@@ -18,9 +18,6 @@ window.addEventListener("wheel", (e) => {
 });
 
 const whyBtn = document.querySelector('.modal-btn')
-console.log(
-  whyBtn
-);
 
 whyBtn.onclick = () => {
   document.querySelector('.why').classList.add('open');
