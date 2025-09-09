@@ -164,7 +164,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('/schema-l.png');
+  background-image: url('/sch-l.png');
   background-size: cover;
   background-position: center;
   filter: blur(1px);
