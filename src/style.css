@@ -144,6 +144,11 @@ body {
   padding-top: 50px;
 }
 
+.head .why .why-inner .why-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
 .head .why .why-inner .why-list {
   list-style: inside;
   padding: 0;
