@@ -65,6 +65,10 @@ window.addEventListener("keydown", (e) => {
   });
 
 const whyBtn = document.querySelector('.modal-btn')
+const closeBtn = document.querySelector('.close-btn')
+closeBtn.onclick = () => {
+  document.querySelector('.why').classList.remove('open');
+}
 
 whyBtn.onclick = () => {
   document.querySelector('.why').classList.add('open');

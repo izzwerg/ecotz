@@ -122,9 +122,38 @@ body {
 
 .head .why.open {
   top: 0;
-  background-color: #06b6d4;
+  /* background-color: #06b6d4; */
   transition: top 0.3s ease-in-out;
   z-index: 11;
+  padding: calc(5vh + 60px) 5vw 5vh 5vw;
+}
+
+.head .why .why-inner {
+  background-color: #06b6d4;
+  color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  padding: 24px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.head .why .why-inner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+}
+
+.head .why .why-inner .close-btn .close-icon {
+  width: 40px;
+  height: 40px;
 }
 
 .main {
