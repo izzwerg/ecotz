@@ -235,6 +235,7 @@ body {
   background-color: #06b6d4db;
   transform: translateY(30px);
   text-align: left;
+  color: black;
 }
 
 .main .one-screen.second .about-text span {
