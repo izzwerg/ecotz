@@ -225,6 +225,22 @@ body {
   z-index: -1;
 }
 
+.main .one-screen.second .about-text {
+  font-size: 2.3vh;
+  z-index: 1;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: #06b6d4db;
+  transform: translateY(30px);
+  text-align: left;
+}
+
+.main .one-screen.second .about-text span {
+  font-weight: 600;
+}
+
 .main .one-screen.third {
   position: relative;
   overflow: hidden;
