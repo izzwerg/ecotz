@@ -13,7 +13,9 @@ const sections = document.querySelectorAll(".one-screen");
   // --- Скрол колесиком ---
   window.addEventListener("wheel", (e) => {
     let isMenuOpen = document.querySelector('.head-mob-menu')?.classList.contains('open');
+    let iswhyOpen = document.querySelector('.why')?.classList.contains('open');
     if (isMenuOpen) return; // блокуємо, якщо меню відкрите
+    if (iswhyOpen) return; // блокуємо, якщо модалка відкрита
     if (isScrolling) return;
 
     e.preventDefault(); // блокуємо нативний скрол
@@ -35,8 +37,11 @@ const sections = document.querySelectorAll(".one-screen");
 
   window.addEventListener("touchend", (e) => {
     let isMenuOpen = document.querySelector('.head-mob-menu')?.classList.contains('open');
+    let iswhyOpen = document.querySelector('.why')?.classList.contains('open');
+
     if (isMenuOpen) return; // блокуємо свайпи при відкритому меню
     if (isScrolling) return;
+    if (iswhyOpen) return; // блокуємо свайпи при відкритій модалці
 
     touchEndY = e.changedTouches[0].clientY;
     const deltaY = touchStartY - touchEndY;
@@ -51,9 +56,11 @@ const sections = document.querySelectorAll(".one-screen");
   }, { passive: true });
 
 window.addEventListener("keydown", (e) => {
-    let isMenuOpen = document.querySelector('.head-mob-menu')?.classList.contains('open');
+  let isMenuOpen = document.querySelector('.head-mob-menu')?.classList.contains('open');
+  let iswhyOpen = document.querySelector('.why')?.classList.contains('open');
     if (isMenuOpen) return;
-    if (isScrolling) return;
+  if (isScrolling) return;
+  if (iswhyOpen) return;
 
     if (e.key === "ArrowDown") {
       e.preventDefault();

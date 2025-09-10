@@ -135,8 +135,27 @@ body {
   width: 100%;
   border-radius: 20px;
   padding: 24px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   overflow-y: auto;
   position: relative;
+  padding-top: 50px;
+}
+
+.head .why .why-inner .why-list {
+  list-style: inside;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.head .why .why-inner .why-list .why-list-item {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .head .why .why-inner .close-btn {
