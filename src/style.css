@@ -21,6 +21,7 @@ html {
 
 a {
   text-decoration: inherit;
+  cursor: pointer;
 }
 
 /* a:hover {} */
@@ -161,6 +162,10 @@ body {
 .head .why .why-inner .why-list .why-list-item {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.head .why .why-inner .why-list .why-list-item span {
+  font-weight: 600;
 }
 
 .head .why .why-inner .close-btn {
