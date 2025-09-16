@@ -409,7 +409,7 @@ body {
 }
 
 .portfolio {
-  max-width: 900px;
+  max-width: 90vw;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -421,7 +421,7 @@ body {
 }
 
 .portfolio-item {
-  min-width: 100%;
+  width: 100%;
   flex-shrink: 0;
   text-align: center;
   padding: 20px;
