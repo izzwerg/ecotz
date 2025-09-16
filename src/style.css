@@ -464,11 +464,11 @@ body {
 }
 
 .portfolio-nav.left {
-  left: 10px;
+  left: 0px;
 }
 
 .portfolio-nav.right {
-  right: 10px;
+  right: 0px;
 }
 
 /* --- Десктоп: 3 елементи поруч --- */
