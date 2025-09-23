@@ -496,8 +496,40 @@ body {
   right: 0px;
 }
 
-/* --- Десктоп: 3 елементи поруч --- */
 @media (min-width: 768px) {
+  .portfolio-item img {
+    width: 430px;
+  }
+
+  .portfolio-nav {
+    padding: 32px;
+  }
+
+  .port-h {
+    font-size: 40px;
+  }
+
+  .port-name {
+    font-size: 30px;
+  }
+
+  .down-btn {
+    font-size: 26px;
+    padding: 12px 24px;
+  }
+
+  .main .one-screen.second {
+    padding: 0 5vw;
+  }
+
+  .main .one-screen.second .about-text {
+    font-size: 2.5vh;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+
   .portfolio-track {
     transform: none !important;
   }
@@ -508,5 +540,26 @@ body {
 
   .portfolio-nav {
     display: none;
+  }
+
+  .main .one-screen.first .h1-text {
+    font-size: 48px;
+  }
+
+  .main .one-screen.first .hero-text-container .hero-text {
+    font-size: 24px;
+  }
+
+  .main .one-screen.first .modal-btn {
+    font-size: 24px;
+  }
+
+  .main .one-screen.second .about-text {
+    font-size: 3vh;
+    max-width: 800px;
+  }
+
+  .main .one-screen.form-container {
+    padding: 5vw 20vw;
   }
 }
