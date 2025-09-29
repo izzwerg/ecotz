@@ -536,6 +536,7 @@ body {
 
   .portfolio-item {
     min-width: 33.33%;
+    width: 33.33%;
   }
 
   .portfolio-nav {
@@ -546,8 +547,14 @@ body {
     font-size: 48px;
   }
 
+  .main .one-screen.first .hero-text-container {
+    width: fit-content;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
   .main .one-screen.first .hero-text-container .hero-text {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   .main .one-screen.first .modal-btn {
