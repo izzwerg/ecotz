@@ -121,6 +121,18 @@ body {
   text-decoration: none;
 }
 
+.head .head-mob-menu nav ul li a.active {
+  color: #FD8B30;
+  font-size: 48px;
+  font-weight: 600;
+  text-decoration: none;
+  text-shadow:
+    -1px -1px 0 #1e40af49,
+    1px -1px 0 #1e40af49,
+    -1px 1px 0 #1e40af49,
+    1px 1px 0 #1e40af49;
+}
+
 .head .why {
   position: absolute;
   top: -100vh;
@@ -359,7 +371,7 @@ body {
 }
 
 .main .one-screen.form-container .form h2 {
-  color: #06b6d4;
+  color: #FD8B30;
   font-size: 30px;
   text-align: center;
   font-weight: 600;
@@ -367,7 +379,7 @@ body {
     -1px -1px 0 #1e40af49,
     1px -1px 0 #1e40af49,
     -1px 1px 0 #1e40af49,
-    1px 1px 0 #1e40af49
+    1px 1px 0 #1e40af49;
 }
 
 .main .one-screen.form-container .form .form-input {
@@ -380,7 +392,7 @@ body {
 }
 
 .main .one-screen.form-container .form .form-button {
-  background-color: #1E40AF;
+  background-color: #FD8B30;
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
@@ -430,10 +442,16 @@ body {
 }
 
 .port-name {
-  font-size: 20px;
+  font-size: 24px;
   color: #1E40AF;
   font-weight: 700;
   margin: 0;
+  color: #FD8B30;
+  text-shadow:
+    -1px -1px 0 #1e40af49,
+    1px -1px 0 #1e40af49,
+    -1px 1px 0 #1e40af49,
+    1px 1px 0 #1e40af49;
 }
 
 .down-btn {
@@ -561,6 +579,7 @@ body {
 
   .main .one-screen.first .hero-text-container .hero-text {
     font-size: 36px;
+    font-weight: 600;
   }
 
   .main .one-screen.first .modal-btn {
@@ -617,7 +636,7 @@ body {
   }
 
   .head .head-desc-nav ul li.active {
-    border-bottom: white 2px solid;
+    border-bottom: #FD8B30 2px solid;
   }
 
   .head .head-nav-mobile {

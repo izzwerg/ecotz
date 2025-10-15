@@ -16,6 +16,7 @@ menuLinks.forEach(link => {
 const sections = document.querySelectorAll(".one-screen[id]");
 
 const navLinks = document.querySelectorAll(".desc-link");
+const navLinksMob = document.querySelectorAll(".menu-link");
   function setActiveLink() {
     let scrollPos = window.scrollY + 100;
     sections.forEach(section => {     
@@ -26,6 +27,13 @@ const navLinks = document.querySelectorAll(".desc-link");
         // navLinks.forEach(link => link.classList.remove("active"));
         navLinks.forEach(link => {
           if (link.childNodes[0].href.includes(`#${section.id}`)) {
+          link.classList.add("active")
+          } else {
+            link.classList.remove("active")
+          }
+        });
+        navLinksMob.forEach(link => {
+          if (link.href.includes(`#${section.id}`)) {
           link.classList.add("active")
           } else {
             link.classList.remove("active")
