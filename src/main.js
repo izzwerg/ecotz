@@ -51,6 +51,10 @@ const sections = document.querySelectorAll(".one-screen");
     if (deltaY > 0) {
       scrollToSection(current + 1); // свайп вгору → вниз
     } else {
+      if (current === 0) {
+        location.reload();
+        return
+      }
       scrollToSection(current - 1); // свайп вниз → вгору
     }
   }, { passive: true });
